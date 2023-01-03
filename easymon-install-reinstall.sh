@@ -5,13 +5,13 @@
 ##########################################################################################
 #  Package installation script for "EasyMon" system monitor app.
 #
-#     Author Contact: ctbishop34@gmail.com
+#     Author: C. Bishop
+#     Origin: https://github.com/ctbishop/EasyMon
 #
 #     PLEASE NOTE:
 #     Although written with the best intentions, this script is not guaranteed to
 #     function as intended or to produce the any particular result. The execution of
-#     this script is thus at your own risk. Please report bugs and other issues to 
-#     ctbishop34@gmail.com.
+#     this script is thus at your own risk.
 
 
 ##########################################################################################
