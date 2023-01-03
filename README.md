@@ -1,30 +1,25 @@
 ## EasyMon
 System monitor app for Linux operating systems - Written in C using GTK-4. 
-  
-  \
-This document contains important information about the containing repository, which  
-comprises the installation package for the "EasyMon" system monitor application.  
 
+<br/>
 
 #### I. AUTHOR CONTACT  
   
-    C. Bishop - casandrabishop.com/contact.html
-  
-  
-  
-  
+&nbsp;&nbsp;&nbsp;&nbsp; C. Bishop - [contact me](https://casandrabishop.com/contact.html)  
+
+<br/>
+
 #### II. DISCLAIMER  
   
-    Although this archive was assembled with the best intentions, neither this  
-    archive nor it contents are guaranteed to function as intended or to produce  
-    any particular result. Thus, the possession and/or application of this  
-    archive and/or any its contents, including the results of such, is done at   
-    your own risk. Please report bugs and other issues either here or directly  
-    via the link above.  
-  
-  
-  
-  
+    Although this archive/repository was assembled with the best intentions,  
+    neither this archive/repository nor it contents are guaranteed to function  
+    as intended or to produce any particular result. Thus, the possession and/or  
+    application of this archive/repository and/or any its contents, including  
+    the results of such, is done at your own risk. Please report bugs and other  
+    issues either here on GitHub or directly via the author contact link above.  
+
+<br/>
+
 #### III. TABLE OF CONTENTS  
   
     1. EasyMon - About
@@ -33,10 +28,9 @@ comprises the installation package for the "EasyMon" system monitor application.
     4. Post-Installation
     5. Launching EasyMon
     6. Deinstallation
-  
-  
-  
-  
+
+<br/>
+
 #### 1. EASYMON - ABOUT  
    
     EasyMon is an uncomplicated system monitor, designed to be ideal for use  
@@ -50,9 +44,9 @@ comprises the installation package for the "EasyMon" system monitor application.
     display units are adjustable. Easymon is compatible with both light and  
     dark OS themes, and accommodates up to sixteen total cores, or eight with  
     hyperthreading enabled.  
-  
-  
-  
+
+<br/>
+
 #### 2. ARCHIVE CONTENTS  
 
     This archive consists of a single directory "EasyMon" containing precisely  
@@ -72,10 +66,9 @@ comprises the installation package for the "EasyMon" system monitor application.
   
     If this is not the case, you are advised to remove the package entirely  
     from your system and contact the originator (ctbishop34@gmail.com).  
-  
-  
-  
-  
+
+<br/>
+
 #### 3. INSTALLATION INSTRUCTIONS  
   
     Open a terminal window and navigate to the location of the archive.  
@@ -106,10 +99,9 @@ comprises the installation package for the "EasyMon" system monitor application.
   
     Following successful installation, the present package and its contents are  
     no longer needed and may be removed from your system.  
-  
-  
-  
-  
+
+<br/>
+
 #### 4. POST-INSTALLATION  
   
     Before launching EasyMon, it is a good idea to reboot your machine  
@@ -121,19 +113,17 @@ comprises the installation package for the "EasyMon" system monitor application.
   
     followed by:  
         sudo apt upgrade  
-  
-  
-  
-  
+
+<br/>
+
 #### 5. LAUNCHING EASYMON  
   
     Following installation, EasyMon can be launched from the desktop icon  
     as well as from the command line:  
         easymon  
-  
-  
-  
-  
+
+<br/>
+
 #### 6. DEINSTALLATION  
   
     The installation of EasyMon includes an uninstaller.  
@@ -145,8 +135,7 @@ comprises the installation package for the "EasyMon" system monitor application.
     would like to proceed. If you choose to continue, the uninstaller will find  
     and remove the installed files, reporting its progress. It will then pause  
     once more for input before removing itself.  
-  
-  
-  
-  
+
+<br/>
+
 (end of document)
