@@ -47,7 +47,7 @@ System monitor app for Linux operating systems - Written in C using GTK-4.
 
 <br/>
 
-#### 2. ARCHIVE CONTENTS  
+#### 2. ARCHIVE/REPOSITORY CONTENTS  
 
     This archive consists of a single directory "EasyMon" containing precisely  
     the following files, all executeables being initially deactivated (save for  
@@ -56,16 +56,18 @@ System monitor app for Linux operating systems - Written in C using GTK-4.
   
     File:                                    Description:  
   
-    easymon                                  EasyMon program  
+    easymon                                  EasyMon program*
     easymon-icon.svg                         shortcut/sidebar icon image  
     com.gmail.ctbishop34.EasyMon.desktop     desktop file  
     easymon-install-reinstall.sh             installation script  
     easymon-uninstall.sh                     deinstallation script  
     README.txt                               (this document)  
   
+    *OR easymon.c for installation from source.
+  
   
     If this is not the case, you are advised to remove the package entirely  
-    from your system and contact the originator (ctbishop34@gmail.com).  
+    from your system and contact the originator.  
 
 <br/>
 
