@@ -56,14 +56,12 @@ System monitor app for Linux operating systems - Written in C using GTK-4.
   
     File:                                    Description:  
   
-    easymon                                  EasyMon program*
+    easymon.c                                source code for EasyMon program
     easymon-icon.svg                         shortcut/sidebar icon image  
     com.gmail.ctbishop34.EasyMon.desktop     desktop file  
     easymon-install-reinstall.sh             installation script  
     easymon-uninstall.sh                     deinstallation script  
     README.txt                               (this document)  
-  
-    *OR easymon.c for installation from source.
   
   
     If this is not the case, you are advised to remove the package entirely  
@@ -73,20 +71,43 @@ System monitor app for Linux operating systems - Written in C using GTK-4.
 
 #### 3. INSTALLATION INSTRUCTIONS  
   
-    Open a terminal window and navigate to the location of the archive.  
-    e.g., if this is your Downloads folder:  
-        cd ~/Downloads  
+    Before before installing EasyMon, please ensure that you are using a Linux  
+    operating system that supports GTK-4, and install the GTK-4 development library  
+    if it is not already installed. You can do this via your package manager. e.g.,  
+    if you use apt,  
   
-    Extract the archive contents:  
-        tar -xf EasyMon.tar.gz  
+    Update your list of available packages:  
+        sudo apt update  
+          
+    Check availability and installation status:  
+        apt list libgtk-4-dev  
+          
+    Install:  
+        sudo apt install libgtk-4-dev  
   
-    Open the directory:  
-        cd EasyMon  
+  
+    Once you have the GTK-4 development library, you will need to compile the source  
+    code file for the EasyMon program, easymon.c. Download the EasyMon package, if  
+    you haven't already. This includes all files in the main branch of the EasyMon  
+    repository. Please download all files to a single directory named "EasyMon" which  
+    contains no other files. Then,  
+  
+    Navigate to the directory. e.g.:  
+        cd ~/Downloads/EasyMon  
+          
+    Compile, naming the output program "easymon" (without quotes):  
+        gcc $( pkg-config --cflags gtk4 ) -o easymon easymon.c $( pkg-config --libs gtk4 )  
+  
+  
+    Should you encounter any trouble compiling the program, the GTK-4 documentation  
+    may be helpful and can be found at [https://docs.gtk.org/gtk4/](https://docs.gtk.org/gtk4/). Once compiled,  
+    the source code is no longer needed. Now you are ready to install. From the  
+    EasyMon directory,  
   
     Give the installer permission to execute:  
         chmod +x easymon-install-reinstall.sh  
   
-    Then run the installer:  
+    Launch the installer:  
         ./easymon-install-reinstall.sh  
   
   
@@ -99,7 +120,7 @@ System monitor app for Linux operating systems - Written in C using GTK-4.
     that were detected. If you chose not to install or if errors occurred and you  
     need to re-install, you can re-run the installer again at any time.  
   
-    Following successful installation, the present package and its contents are  
+    Following successful installation, the EasyMon directory and its contents are  
     no longer needed and may be removed from your system.  
 
 <br/>
