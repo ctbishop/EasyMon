@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- EasyMon User Interface -->
+<interface>
+    <object class="GtkWindow" id="window">
+        <property name="title">EasyMon</property>
+        <property name="default-width">298</property>
+        <property name="resizable">FALSE</property>
+        <child>
+            <object class="GtkFrame" id="windowFrame">
+                <child>
+                    <object class="GtkBox">
+                        <property name="orientation">GTK_ORIENTATION_VERTICAL</property>
+                        <child>
+                            <object class="GtkLabel" id="errorMessage">
+                                <property name="use-markup">TRUE</property>
+                                <property name="visible">FALSE</property>
+                                <property name="label">
+                                    &#xA;Uh oh... an error occurred.
+                                    &#xA;Please report issues on &lt;a href="https://github.com/ctbishop/easymon" title="EasyMon GitHub Repository"&gt;GitHub&lt;/a&gt;.
+                                </property>
+                            </object>
+                        </child>
+                        <child>
+                            <object class="GtkStackSwitcher" id="stackButtons">
+                                <property name="stack">stack</property>
+                            </object>
+                        </child>
+                        <child>
+                            <object class="GtkStack" id="stack">
+                                <child>
+                                    <object class="GtkStackPage">
+                                        <property name="title">Monitor</property>
+                                        <property name="child">
+                                            <object class="GtkBox" id="monitorBox">
+                                                <property name="name">monitorBox</property>
+                                                <property name="orientation">GTK_ORIENTATION_VERTICAL</property>
+                                                <child>
+                                                    <object class="GtkBox">
+                                                        <property name="name">cpuBox</property>
+                                                        <child>
+                                                            <object class="GtkExpander" id="cpuExpander">
+                                                                <property name="use-markup">TRUE</property>
+                                                                <child>
+                                                                    <object class="GtkListBox">
+                                                                        <child>
+                                                                            <object class="GtkListBoxRow">
+                                                                                <property name="css-classes">header</property>
+                                                                                <property name="selectable">FALSE</property>
+                                                                                <property name="activatable">FALSE</property>
+                                                                                <child>
+                                                                                    <object class="GtkGrid">
+                                                                                        <property name="column-homogeneous">TRUE</property>
+                                                                                        <property name="hexpand">TRUE</property>
+                                                                                        <child>
+                                                                                            <object class="GtkLabel">
+                                                                                                <property name="label">Cor</property>
+                                                                                            </object>
+                                                                                        </child>
+                                                                                        <child>
+                                                                                            <object class="GtkLabel">
+                                                                                                <property name="label">Prc</property>
+                                                                                            </object>
+                                                                                        </child>
+                                                                                        <child>
+                                                                                            <object class="GtkLabel">
+                                                                                                <property name="label">Use%</property>
+                                                                                                <layout>
+                                                                                                    <property name="column-span">2</property>
+                                                                                                </layout>
+                                                                                            </object>
+                                                                                        </child>
+                                                                                        <child>
+                                                                                            <object class="GtkLabel">
+                                                                                                <property name="label">MHz</property>
+                                                                                                <layout>
+                                                                                                    <property name="column-span">3</property>
+                                                                                                </layout>
+                                                                                            </object>
+                                                                                        </child>
+                                                                                    </object>
+                                                                                </child>
+                                                                            </object>
+                                                                        </child>
+                                                                        <child>
+                                                                            <object class="GtkListBoxRow">
+                                                                                <property name="selectable">FALSE</property>
+                                                                                <property name="activatable">FALSE</property>
+                                                                                <child>
+                                                                                    <object class="GtkGrid" id="cpuGrid">
+                                                                                        <property name="column-homogeneous">TRUE</property>
+                                                                                        <property name="hexpand">TRUE</property>
+                                                                                    </object>
+                                                                                </child>
+                                                                            </object>
+                                                                        </child>
+                                                                    </object>
+                                                                </child>
+                                                            </object>
+                                                        </child>
+                                                    </object>
+                                                </child>
+                                                <child>
+                                                    <object class="GtkBox">
+                                                        <property name="name">memoryBox</property>
+                                                        <child>
+                                                            <object class="GtkExpander" id="memoryExpander">
+                                                                <property name="use-markup">TRUE</property>
+                                                                <child>
+                                                                    <object class="GtkGrid">
+                                                                        <property name="column-homogeneous">TRUE</property>
+                                                                        <child>
+                                                                            <object class="GtkLabel">
+                                                                                <property name="css-classes">header</property>
+                                                                                <property name="label">buff</property>
+                                                                                <layout>
+                                                                                    <property name="row">0</property>
+                                                                                    <property name="column">0</property>
+                                                                                </layout>
+                                                                            </object>
+                                                                        </child>
+                                                                        <child>
+                                                                            <object class="GtkLabel" id="buffers">
+                                                                                <layout>
+                                                                                    <property name="row">0</property>
+                                                                                    <property name="column">1</property>
+                                                                                </layout>
+                                                                            </object>
+                                                                        </child>
+                                                                        <child>
+                                                                            <object class="GtkLabel">
+                                                                                <property name="css-classes">header</property>
+                                                                                <property name="label">page</property>
+                                                                                <layout>
+                                                                                    <property name="row">1</property>
+                                                                                    <property name="column">0</property>
+                                                                                </layout>
+                                                                            </object>
+                                                                        </child>
+                                                                        <child>
+                                                                            <object class="GtkLabel" id="pageCache">
+                                                                                <layout>
+                                                                                    <property name="row">1</property>
+                                                                                    <property name="column">1</property>
+                                                                                </layout>
+                                                                            </object>
+                                                                        </child>
+                                                                        <child>
+                                                                            <object class="GtkLabel">
+                                                                                <property name="css-classes">header</property>
+                                                                                <property name="label">swap</property>
+                                                                                <layout>
+                                                                                    <property name="row">2</property>
+                                                                                    <property name="column">0</property>
+                                                                                </layout>
+                                                                            </object>
+                                                                        </child>
+                                                                        <child>
+                                                                            <object class="GtkLabel" id="swapCache">
+                                                                                <layout>
+                                                                                    <property name="row">2</property>
+                                                                                    <property name="column">1</property>
+                                                                                </layout>
+                                                                            </object>
+                                                                        </child>
+                                                                        <child>
+                                                                            <object class="GtkLabel" id="totalInstalled">
+                                                                                <property name="css-classes">footer</property>
+                                                                                <property name="xalign">1</property>
+                                                                                <layout>
+                                                                                    <property name="row">3</property>
+                                                                                    <property name="column">0</property>
+                                                                                    <property name="column-span">3</property>
+                                                                                </layout>
+                                                                            </object>
+                                                                        </child>
+                                                                    </object>
+                                                                </child>
+                                                            </object>
+                                                        </child>
+                                                    </object>
+                                                </child>
+                                            </object>
+                                        </property>
+                                    </object>
+                                </child>
+                                <child>
+                                    <object class="GtkStackPage">
+                                        <property name="title">Settings</property>
+                                        <property name="child">
+                                            <object class="GtkListBox">
+                                                <property name="name">settingsBox</property>
+                                                <child>
+                                                    <object class="GtkListBoxRow">
+                                                        <property name="selectable">FALSE</property>
+                                                        <property name="activatable">FALSE</property>
+                                                        <child>
+                                                            <object class="GtkGrid">
+                                                                <child>
+                                                                    <object class="GtkLabel">
+                                                                        <property name="css-classes">header</property>
+                                                                        <property name="halign">GTK_ALIGN_START</property>
+                                                                        <property name="hexpand">TRUE</property>
+                                                                        <property name="label">Update Interval:</property>
+                                                                    </object>
+                                                                </child>
+                                                                <child>
+                                                                    <object class="GtkDropDown" id="intervalDropdown">
+                                                                        <property name="model">
+                                                                            <object class="GtkStringList">
+                                                                                <items>
+                                                                                    <item>0.5</item>
+                                                                                    <item> 1 </item>
+                                                                                    <item> 3 </item>
+                                                                                </items>
+                                                                            </object>
+                                                                        </property>
+                                                                        <property name="selected">1</property>
+                                                                    </object>
+                                                                </child>
+                                                                <child>
+                                                                    <object class="GtkLabel">
+                                                                        <property name="css-classes">units</property>
+                                                                        <property name="valign">GTK_ALIGN_END</property>
+                                                                        <property name="label">s </property>
+                                                                    </object>
+                                                                </child>
+                                                            </object>
+                                                        </child>
+                                                    </object>
+                                                </child>
+                                                <child>
+                                                    <object class="GtkListBoxRow">
+                                                        <property name="selectable">FALSE</property>
+                                                        <property name="activatable">FALSE</property>
+                                                        <child>
+                                                            <object class="GtkGrid">
+                                                                <child>
+                                                                    <object class="GtkLabel">
+                                                                        <property name="css-classes">header</property>
+                                                                        <property name="halign">GTK_ALIGN_START</property>
+                                                                        <property name="hexpand">TRUE</property>
+                                                                        <property name="label">Memory Units:</property>
+                                                                        <layout>
+                                                                            <property name="row">0</property>
+                                                                            <property name="row-span">2</property>
+                                                                        </layout>
+                                                                    </object>
+                                                                </child>
+                                                                <child>
+                                                                    <object class="GtkLabel">
+                                                                        <property name="css-classes">units</property>
+                                                                        <property name="halign">GTK_ALIGN_END</property>
+                                                                        <property name="label">GB</property>
+                                                                        <layout>
+                                                                            <property name="row">1</property>
+                                                                            <property name="row-span">2</property>
+                                                                        </layout>
+                                                                    </object>
+                                                                </child>
+                                                                <child>
+                                                                    <object class="GtkSwitch" id="unitsSwitch">
+                                                                        <layout>
+                                                                            <property name="row">0</property>
+                                                                            <property name="row-span">2</property>
+                                                                        </layout>
+                                                                    </object>
+                                                                </child>
+                                                                <child>
+                                                                    <object class="GtkLabel">
+                                                                        <property name="css-classes">units</property>
+                                                                        <property name="label">% </property>
+                                                                        <layout>
+                                                                            <property name="row">1</property>
+                                                                            <property name="row-span">2</property>
+                                                                        </layout>
+                                                                    </object>
+                                                                </child>
+                                                            </object>
+                                                        </child>
+                                                    </object>
+                                                </child>
+                                                <child>
+                                                    <object class="GtkListBoxRow">
+                                                        <property name="selectable">FALSE</property>
+                                                        <property name="activatable">FALSE</property>
+                                                        <child>
+                                                            <object class="GtkGrid">
+                                                                <child>
+                                                                    <object class="GtkLabel">
+                                                                        <property name="css-classes">header</property>
+                                                                        <property name="halign">GTK_ALIGN_START</property>
+                                                                        <property name="hexpand">TRUE</property>
+                                                                        <property name="label">Dark Mode:</property>
+                                                                        <layout>
+                                                                            <property name="row">0</property>
+                                                                            <property name="row-span">2</property>
+                                                                        </layout>
+                                                                    </object>
+                                                                </child>
+                                                                <child>
+                                                                    <object class="GtkLabel">
+                                                                        <property name="css-classes">units</property>
+                                                                        <property name="halign">GTK_ALIGN_END</property>
+                                                                        <property name="label">Off</property>
+                                                                        <layout>
+                                                                            <property name="row">1</property>
+                                                                            <property name="row-span">2</property>
+                                                                        </layout>
+                                                                    </object>
+                                                                </child>
+                                                                <child>
+                                                                    <object class="GtkSwitch" id="colorSwitch">
+                                                                        <layout>
+                                                                            <property name="row">0</property>
+                                                                            <property name="row-span">2</property>
+                                                                        </layout>
+                                                                    </object>
+                                                                </child>
+                                                                <child>
+                                                                    <object class="GtkLabel">
+                                                                        <property name="css-classes">units</property>
+                                                                        <property name="label">On</property>
+                                                                         <layout>
+                                                                            <property name="row">1</property>
+                                                                            <property name="row-span">2</property>
+                                                                        </layout>
+                                                                    </object>
+                                                                </child>
+                                                            </object>
+                                                        </child>
+                                                    </object>
+                                                </child>
+                                            </object>
+                                        </property>
+                                    </object>
+                                </child>
+                            </object>
+                        </child>
+                    </object>
+                </child>
+            </object>
+        </child>
+    </object>
+</interface>
+

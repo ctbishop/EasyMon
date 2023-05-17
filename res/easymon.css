@@ -1,0 +1,79 @@
+/* EasyMon General Styles */
+
+
+window > frame {
+    font-family: monospace;
+    padding: 0 20px 20px 20px;
+}
+#monitorBox {
+    margin: 10px 0 10px 0;
+}
+#monitorBox > :first-child {
+    margin-bottom: 15px;
+}
+list {
+    padding: 10px 10px 10px 15px;
+}
+list,
+#memoryBox grid {
+    border-radius: 10px;
+}
+#cpuBox list,
+#memoryBox grid {
+    margin-left: 15px;
+    padding: 10px 0 10px 10px;
+}
+list > row {
+    margin-bottom: 5px;
+}
+list > :last-child {
+    margin-bottom: 0;
+}
+#memoryBox grid > :last-child {
+    margin: 10px 15px 0 0;
+}
+#monitorBox .header,
+#monitorBox list > row.header > grid > * {
+    margin-bottom: 0;
+}
+stackswitcher button {
+    margin-bottom: 20px;
+    padding: 0;
+}
+.header,
+.footer,
+stackswitcher button,
+frame button,
+frame button > label,
+#monitorBox list > row.header > grid > * {
+    font-size: small;
+}
+stackswitcher button,
+#settingsBox .header {
+    font-family: arial;
+}
+#settingsBox .units {
+    font-size: x-small;
+}
+switch,
+dropdown button {
+    margin: 0 3px 0 3px;
+}
+switch {
+    padding: 0 5px 0 5px;
+}
+dropdown button {
+    padding: 0 5px 0 10px;
+}
+expander {
+    margin-right: 5px;
+}
+
+/* Expander title - min width is set so that content width (i.e., quantity
+   of digits in value) may vary without causing parent widgets to resize. */
+title {
+    min-width: 240px;
+    padding-bottom: 10px;
+    font-family: liberation mono;
+}
+
