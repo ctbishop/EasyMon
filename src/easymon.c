@@ -6,7 +6,7 @@
 // Timeout identifier.
 guint timeout_ID;
 
-// Total installed memory in gigabytes, to be determined on app startup.
+// Total installed system memory in gigabytes, to be determined on app startup.
 double mem_totalInstalled;
 
 // Variables used to display memory values in either gigabytes or as a percentage. 
@@ -217,8 +217,8 @@ bool startup_prepare_display()
     on_expander_notify_expanded(cpuBox.expander);
     on_expander_notify_expanded(memBox.expander);
 
-    /* Open virtual file containing value of total installed memory in kilobytes,
-       returning failure if the file could not be found or opened. */
+    /* Open virtual file containing value of total installed system memory in
+       kilobytes, returning failure if the file could not be found or opened. */
     FILE *file = fopen("/proc/meminfo", "r");
     if (file == NULL)
     {
