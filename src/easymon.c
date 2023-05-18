@@ -208,7 +208,7 @@ bool startup_prepare_display()
     char *cpu_title_str = g_strdup_printf(titleTemplate, "CPU", "...", "%");
     gtk_expander_set_label(cpuBox.expander, cpu_title_str);
     g_free(cpu_title_str);
-    char *mem_title_str = g_strdup_printf(titleTemplate, "RAM", "...", "GB");
+    char *mem_title_str = g_strdup_printf(titleTemplate, "MEM", "...", "GB");
     gtk_expander_set_label(memBox.expander, mem_title_str);
     g_free(mem_title_str);
 
@@ -284,7 +284,7 @@ gboolean timeout_update_display()
 
     // Update values in expander titles.
     set_expander_title(cpuBox.expander, "CPU", titleTemplate, cpuUse_aggregate, 1, "%");
-    set_expander_title(memBox.expander, "RAM", titleTemplate, memVals[0], memVal_factor, unit);
+    set_expander_title(memBox.expander, "MEM", titleTemplate, memVals[0], memVal_factor, unit);
 
     // Update values within open expander(s).
     if (Expanded_cpu)
