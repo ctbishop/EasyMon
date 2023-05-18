@@ -28,13 +28,13 @@ Public License. However, the Developer is not affiliated with the GTK Project.
 The official GTK Project website and documentation, visit https://gtk.org/. 
   
 ## III. Table of Contents
-1. EasyMon - About  
+1. About  
 2. Compatibility  
 3. How to Install and Launch EasyMon
 4. Uninstalling EasyMon
 5. Troubleshooting
 
-## 1. EasyMon - About
+## 1. About
 TODO
   
 ## 2. Compatibility
