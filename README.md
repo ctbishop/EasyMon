@@ -168,13 +168,42 @@ uninstaller will remove the installed files as well as itself.
 
 ## 5. Troubleshooting and Modifications
 
-### Resizability
+### Resizability of the Application Window
 The application window is not user-resizable. This means that you cannot
 click and drag the edges to resize the window. This makes it possible for
 the window to decrease in height when an open expander is closed. If this is
 of any concern to you, you can change it by editing the window's "resizable"
-property from FALSE to TRUE in the following line of easymon.ui.
+property from FALSE to TRUE in line 8 of easymon.ui:
 
     <property name="resizable">FALSE</property>
 
-This will be near the top of the file.
+This will be near the top of the file. If you have already installed
+EasyMon, easymon.ui will be in /usr/share/easymon/ui/.
+
+### Changing the Default Update Interval
+To change the default selection for update interval, you can modify line 218
+of easymon.ui:
+
+    <property name="selected">1</property>
+
+where 0, 1, and 2 correspond to the first, second, and third options shown
+in the dropdown menu. If you have already installed EasyMon, easymon.ui will
+be in /usr/share/easymon/ui/.
+
+### Clickable Icon Doesn't Show
+If the installer didn't indicate any issues relating to the icon, you may
+simply need to reboot before the icon is visible. It may also be helpful to
+update your system:
+
+For Ubuntu, Mint, or other Debian distributions:
+
+    sudo apt update && sudo apt upgrade
+
+For Red Hat, CentOS, and other RPM-based distributions:
+
+    sudo dnf check-update && sudo dnf upgrade
+
+### GTK 4 Related Issues
+For support in resolving any GTK 4 related issue, please refer to the
+official website of the GTK Project, https://www.gtk.org/, and the resources
+provided there.
