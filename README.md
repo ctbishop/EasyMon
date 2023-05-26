@@ -5,7 +5,7 @@ Mini system monitor software for Linux.
 
 ## I. Author
 
-C.T. Bishop - https://github.com/ctbishop - [Contact Me](https://www.casandrabishop.com/contact.html)
+C.T. Bishop - https://github.com/ctbishop - [Contact Me](https://casandrabishop.com/contact/)
 
 
 ## II. Disclaimer and Notice
