@@ -113,7 +113,7 @@ https://www.gtk.org/docs/installations/linux/
 
 ### Download, Compile, and Install Easymon
 Once you have installed the GTK 4 development library and its dependencies,
-you can proceed the the following steps. First, open a terminal and navigate
+you can proceed with the following steps. First, open a terminal and navigate
 to an appropriate directory to which you will download the EasyMon
 installation package. For example:
 
@@ -177,8 +177,8 @@ property from FALSE to TRUE in line 8 of easymon.ui:
 
     <property name="resizable">FALSE</property>
 
-This will be near the top of the file. If you have already installed
-EasyMon, easymon.ui will be in /usr/share/easymon/ui/.
+If you have already installed EasyMon, easymon.ui will be in
+/usr/share/easymon/ui/.
 
 ### Changing the Default Update Interval
 To change the default selection for update interval, you can modify line 218
