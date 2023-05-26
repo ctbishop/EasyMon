@@ -152,7 +152,7 @@ extracted its contents, as these are no longer needed.
 Following successful installation, EasyMon can be launched by clicking its
 desktop icon, or from a terminal by typing:
 
-        easymon
+    easymon
 
 
 ## 4. Uninstalling EasyMon
