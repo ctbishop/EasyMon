@@ -16,7 +16,7 @@ primary author and originator of This Software (i.e., C.T. Bishop -
 https://github.com/ctbishop), while "User" refers to as any person(s) or
 entity other than the Developer who acquires or uses This Software or any
 component file(s), such as by download, installation, copying, modification,
-redistribution, compiling, executation, or other method of acquisition or
+redistribution, compiling, execution, or other method of acquisition or
 utilization.
 
 This Software is intended for non-commercial use only and is offered by the
