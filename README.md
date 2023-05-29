@@ -21,11 +21,11 @@ utilization.
 
 This Software is intended for non-commercial use only and is offered by the
 Developer free of charge, "as-is", and with no warranties or guarantees. The
-User is responsible for complying with all relevant laws and regulations for
-the use of This Software and assumes all associated risks. The Developer
+User is responsible for complying with all relevant laws and regulations
+during use of This Software and assumes all associated risks. The Developer
 will not be liable for any damage, loss, complication, or other harm caused
 or precipitated by any action(s) and/or lack thereof of the User in using
-This Software, even when advised by the Developer.
+This Software, including when advised by the Developer.
 
 This Software is designed to be used in conjunction with the GTK 4 library,
 which is licensed under the terms of version 2.1+ of the GNU Lesser General
