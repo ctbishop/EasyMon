@@ -58,10 +58,10 @@ int main(int argc, char **argv)
     // Create easymon application with identifying string.
     GtkApplication *easymon = gtk_application_new("com.gmail.ctbishop34.EasyMon2", G_APPLICATION_FLAGS_NONE);
 
-    // Set application launch to trigger make_build_gui function.
+    // Set application launch to trigger setup_make_gui function.
     g_signal_connect(easymon, "activate", G_CALLBACK(setup_make_gui), NULL);
 
-    // Launch application and wait it is closed.
+    // Launch application, then wait until it is closed.
     int status = g_application_run(G_APPLICATION(easymon), argc, argv);
 
     // Run cleanup function.
